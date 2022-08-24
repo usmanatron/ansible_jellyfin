@@ -1,0 +1,16 @@
+# {{ ansible_managed }}
+version: "3.7"
+
+services:
+  app:
+    image: "jellyfin/jellyfin:{{ jellyfin_version }}"
+    ports:
+      - 8080:8096
+    restart: always
+    volumes:
+      - "{{ app_folder }}/config:/srv/jellyfin/config"
+      - "{{ app_folder }}/cache:/srv/jellyfin/cache"
+      - "{{ media_directory }}:/media"
+
+      
+

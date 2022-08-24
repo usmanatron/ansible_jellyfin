@@ -1,2 +1,3 @@
 ---
-# vars file for ansible_role_template
+jellyfin_version: ""
+media_directory: ""

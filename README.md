@@ -1,12 +1,12 @@
-# Ansible Role: template
+# Ansible Role: jellyfin
 
-A brief description of the role goes here.
+Installs Jellyfin using Docker. Includes backups for the config directory
 
 ## Requirements
 
 This role assumes the following:
 
-* TODO
+* Docker is installed
 
 ## Role Variables
 
@@ -14,13 +14,15 @@ This role assumes the following:
 
 | Name | Details |
 | --- | --- |
-| `TODO` | TODO |
+| `jellyfin_version` | The version of the Jellyfin Docker container |
+| `media_directory` | The local directory that contains your media files. |
 
 ### Default Variables
 
 | Name | Default Value | Details |
 | --- | --- | --- |
-| `TODO` | `TODO` | TODO |
+| `app_name` | `jellyfin` | Used to name things |
+| `app_folder` | `/apps/jellyfin` | The base directory for deployment |
 
 ## Dependencies
 
